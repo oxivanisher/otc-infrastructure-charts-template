@@ -15,7 +15,6 @@ global:
         value: "{{.Values.projectValues.adminDomain}}"
 
 charts:
-
   argocd-config:
     namespace: argocd
     targetRevision: 0.2.5
@@ -79,3 +78,8 @@ charts:
     targetRevision: "1.0.2"
     # values files needs to be inside this chart
     valueFiles: "value-files/admin-dashboard/values.yaml"
+
+  # testi test test
+  elastic-stack:
+    namespace: monitoring
+    targetRevision: "7.17.3-route-bugfix"
